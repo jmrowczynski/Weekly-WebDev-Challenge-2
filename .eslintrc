@@ -1,0 +1,19 @@
+{
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
+    "react/state-in-constructor": [1, "never"],
+    "import/no-extraneous-dependencies": 0,
+    "import/prefer-default-export": 0
+  },
+  "globals": {
+    "document": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  }
+}
