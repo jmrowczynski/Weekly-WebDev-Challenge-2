@@ -4,11 +4,14 @@ import Nav from 'components/molecules/Nav/Nav';
 
 const StyledWrapper = styled.header`
   display: flex;
+  position: fixed;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
-  margin: 0;
-  padding: 0;
+  flex-wrap: wrap;
+  left: 5rem;
+  right: 0;
+  padding: 0 10rem;
+  z-index: 9;
   h1 {
     font-family: 'Pacifico', cursive;
     font-weight: 300;

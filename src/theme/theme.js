@@ -1,3 +1,11 @@
 export const theme = {
-  main: '#ff6033',
+  primary: '#ff6033',
+  secondary: '#5585A2',
+  tertiary: '#F72B3B',
+  bg: {
+    first: '#00C4C4',
+    second: '#70BFFF',
+    third: '#FFE92F',
+    fourth: '#B07CF7',
+  },
 };

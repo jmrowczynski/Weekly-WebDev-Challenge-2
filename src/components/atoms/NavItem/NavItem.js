@@ -9,6 +9,7 @@ const NavItem = styled.a`
   position: relative;
   text-decoration: none;
   color: black;
+  cursor: pointer;
   &.active {
     &::before {
       content: '';

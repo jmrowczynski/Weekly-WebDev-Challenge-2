@@ -1,28 +1,21 @@
 import React from 'react';
 import GlobalStyle from 'theme/GlobalStyle';
-import HeaderTemplate from 'components/templates/HeaderTemplate/HeaderTemplate';
-import AboutTemplate from 'components/templates/AboutTemplate/AboutTemplate';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { theme } from 'theme/theme';
 import { ThemeProvider } from 'styled-components';
+import HeaderTemplate from 'components/templates/HeaderTemplate/HeaderTemplate';
+import AboutTemplate from 'components/templates/AboutTemplate/AboutTemplate';
+import ServicesTemplate from 'components/templates/ServicesTemplate/ServicesTemplate';
+import GalleryTemplate from 'components/templates/GalleryTemplate/GalleryTemplate';
 
 const Root = () => (
   <>
     <GlobalStyle />
     <ThemeProvider theme={theme}>
       <>
-        <BrowserRouter>
-          <HeaderTemplate />
-          <AboutTemplate />
-          <Switch>
-            <Route exact path="/" />
-            <Route path="/" />
-            <Route path="/" />
-            <Route path="/" />
-            <Route path="/" />
-            <Route path="/" />
-          </Switch>
-        </BrowserRouter>
+        <HeaderTemplate id="home" />
+        <AboutTemplate id="about" />
+        <ServicesTemplate />
+        <GalleryTemplate />
       </>
     </ThemeProvider>
   </>

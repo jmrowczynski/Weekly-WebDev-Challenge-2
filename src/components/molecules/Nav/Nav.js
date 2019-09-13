@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
 import NavItem from 'components/atoms/NavItem/NavItem';
+import { Link } from 'react-scroll';
 
 const StyledWrapper = styled.ul`
   display: flex;
@@ -18,32 +18,32 @@ const Nav = () => (
   <nav>
     <StyledWrapper>
       <li>
-        <NavItem exact as={NavLink} to="/">
+        <NavItem as={Link} to="home" spy smooth offset={-150} duration={500}>
           home
         </NavItem>
       </li>
       <li>
-        <NavItem as={NavLink} to="/about">
+        <NavItem as={Link} to="about" spy smooth offset={-150} duration={500}>
           about
         </NavItem>
       </li>
       <li>
-        <NavItem as={NavLink} to="/services">
+        <NavItem as={Link} to="services" spy smooth offset={-150} duration={500}>
           services
         </NavItem>
       </li>
       <li>
-        <NavItem as={NavLink} to="/gallery">
+        <NavItem as={Link} to="gallery" spy smooth offset={-150} duration={500}>
           gallery
         </NavItem>
       </li>
       <li>
-        <NavItem as={NavLink} to="/blog">
+        <NavItem as={Link} to="#">
           blog
         </NavItem>
       </li>
       <li>
-        <NavItem as={NavLink} to="/contact">
+        <NavItem as={Link} to="#">
           contact
         </NavItem>
       </li>
