@@ -18,22 +18,22 @@ const Nav = () => (
   <nav>
     <StyledWrapper>
       <li>
-        <NavItem as={Link} to="home" spy smooth offset={-150} duration={500}>
+        <NavItem as={Link} to="home" spy smooth offset={-50} duration={500}>
           home
         </NavItem>
       </li>
       <li>
-        <NavItem as={Link} to="about" spy smooth offset={-150} duration={500}>
+        <NavItem as={Link} to="about" spy smooth offset={-50} duration={500}>
           about
         </NavItem>
       </li>
       <li>
-        <NavItem as={Link} to="services" spy smooth offset={-150} duration={500}>
+        <NavItem as={Link} to="services" spy smooth offset={-50} duration={500}>
           services
         </NavItem>
       </li>
       <li>
-        <NavItem as={Link} to="gallery" spy smooth offset={-150} duration={500}>
+        <NavItem as={Link} to="gallery" spy smooth offset={-50} duration={500}>
           gallery
         </NavItem>
       </li>

@@ -12,7 +12,6 @@ const StyledWrapper = styled.div`
   padding: 0 5rem;
   grid-column-gap: 3rem;
   img {
-    height: auto;
     width: 100%;
     min-width: 30rem;
   }
@@ -23,6 +22,7 @@ const InnerWrapper = styled.div`
   flex-direction: column;
   align-items: flex-start;
   max-width: 50rem;
+  padding: 5rem 0;
 `;
 
 const AboutTemplate = () => (

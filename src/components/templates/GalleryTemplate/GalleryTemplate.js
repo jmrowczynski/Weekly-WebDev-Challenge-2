@@ -2,19 +2,24 @@ import React from 'react';
 import styled from 'styled-components';
 import Title from 'components/atoms/Title/Title';
 import Paragraph from 'components/atoms/Paragraph/Paragraph';
+import Button from 'components/atoms/Button/Button';
 import img1 from 'assets/img/grid/img.jpg';
 import img2 from 'assets/img/grid/img2.jpg';
 import img3 from 'assets/img/grid/img3.jpg';
 import img4 from 'assets/img/grid/img4.jpg';
 import img5 from 'assets/img/grid/img5.jpg';
+import { theme } from '../../../theme/theme';
 
 const StyledWrapper = styled.div`
   background-color: #ffe92f;
   padding: 8rem 17rem;
+  text-align: center;
+  button {
+    margin-top: 2rem;
+  }
 `;
 
 const InnerWrapper = styled.header`
-  text-align: center;
   max-width: 63rem;
   margin: 0 auto 2rem;
 `;
@@ -27,7 +32,6 @@ const GridWrapper = styled.section`
   div:first-child {
     grid-row: 1/5;
     grid-column: 1/5;
-    overflow: hidden;
   }
   div:nth-child(2) {
     grid-row: 1/3;
@@ -81,6 +85,7 @@ const GalleryTemplate = () => (
           <img src={img5} alt="" />
         </div>
       </GridWrapper>
+      <Button color={theme.secondary}>view more</Button>
     </StyledWrapper>
   </div>
 );

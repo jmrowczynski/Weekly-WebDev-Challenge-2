@@ -17,7 +17,7 @@ const NavItem = styled.a`
       height: 3px;
       top: -5px;
       position: absolute;
-      background-color: ${({ theme }) => theme.main};
+      background-color: ${({ theme }) => theme.primary};
     }
   }
 `;

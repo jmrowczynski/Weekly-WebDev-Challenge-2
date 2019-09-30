@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,700&display=swap');
     *, *::before, *::after{
-        box-sizing: border-box
+        box-sizing: border-box;
     }
 
     html {

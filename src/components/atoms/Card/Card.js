@@ -5,7 +5,7 @@ const Card = styled.div`
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
-  padding: 4rem 13rem 4rem 3rem;
+  padding: 3rem 13rem 3rem 3rem;
   width: 40rem;
   border: none;
   box-shadow: 0px 5px 16px -1px #707070;
