@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const DateBox = styled.div`
   position: relative;
   background-color: rgba(0, 0, 0, 0.3);
-  max-width: 6rem;
   border-radius: 0.5rem;
   color: white;
   font-weight: 700;

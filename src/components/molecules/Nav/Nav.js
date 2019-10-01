@@ -38,7 +38,7 @@ const Nav = () => (
         </NavItem>
       </li>
       <li>
-        <NavItem as={Link} to="#">
+        <NavItem as={Link} to="blog" spy smooth offset={-50} duration={500}>
           blog
         </NavItem>
       </li>

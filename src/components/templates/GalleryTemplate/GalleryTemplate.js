@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { withTheme } from 'styled-components';
 import Title from 'components/atoms/Title/Title';
 import Paragraph from 'components/atoms/Paragraph/Paragraph';
 import Button from 'components/atoms/Button/Button';
@@ -8,7 +8,6 @@ import img2 from 'assets/img/grid/img2.jpg';
 import img3 from 'assets/img/grid/img3.jpg';
 import img4 from 'assets/img/grid/img4.jpg';
 import img5 from 'assets/img/grid/img5.jpg';
-import { theme } from '../../../theme/theme';
 
 const StyledWrapper = styled.div`
   background-color: #ffe92f;
@@ -85,9 +84,9 @@ const GalleryTemplate = () => (
           <img src={img5} alt="" />
         </div>
       </GridWrapper>
-      <Button color={theme.secondary}>view more</Button>
+      <Button color={({ theme }) => theme.secondary}>view more</Button>
     </StyledWrapper>
   </div>
 );
 
-export default GalleryTemplate;
+export default withTheme(GalleryTemplate);
