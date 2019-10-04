@@ -43,7 +43,7 @@ const Nav = () => (
         </NavItem>
       </li>
       <li>
-        <NavItem as={Link} to="#">
+        <NavItem as={Link} to="contact" spy smooth offset={-50} duration={500}>
           contact
         </NavItem>
       </li>

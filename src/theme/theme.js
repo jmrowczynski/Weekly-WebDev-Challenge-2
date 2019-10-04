@@ -3,6 +3,7 @@ export const theme = {
   secondary: '#5585A2',
   tertiary: '#96B92C',
   quaternary: '#F72B3B',
+  form: '#00C4C4',
   bg: {
     first: '#00C4C4',
     second: '#70BFFF',

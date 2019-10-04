@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { withTheme } from 'styled-components';
+import styled from 'styled-components';
 import Title from 'components/atoms/Title/Title';
 import Paragraph from 'components/atoms/Paragraph/Paragraph';
 import Button from 'components/atoms/Button/Button';
@@ -55,38 +55,36 @@ const GridWrapper = styled.section`
 `;
 
 const GalleryTemplate = () => (
-  <div id="gallery">
-    <StyledWrapper>
-      <InnerWrapper>
-        <Title secondary big>
-          Gallery
-        </Title>
-        <Paragraph secondary>
-          Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-          ex ea commodo consequat.
-        </Paragraph>
-      </InnerWrapper>
-      <GridWrapper>
-        <div>
-          <img src={img1} alt="" />
-        </div>
-        <div>
-          <img src={img2} alt="" />
-        </div>
-        <div>
-          <img src={img3} alt="" />
-        </div>
-        <div>
-          <img src={img4} alt="" />
-        </div>
-        <div>
-          <img src={img5} alt="" />
-        </div>
-      </GridWrapper>
-      <Button color={({ theme }) => theme.secondary}>view more</Button>
-    </StyledWrapper>
-  </div>
+  <StyledWrapper id="gallery">
+    <InnerWrapper>
+      <Title secondary big>
+        Gallery
+      </Title>
+      <Paragraph secondary>
+        Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat.
+      </Paragraph>
+    </InnerWrapper>
+    <GridWrapper>
+      <div>
+        <img src={img1} alt="" />
+      </div>
+      <div>
+        <img src={img2} alt="" />
+      </div>
+      <div>
+        <img src={img3} alt="" />
+      </div>
+      <div>
+        <img src={img4} alt="" />
+      </div>
+      <div>
+        <img src={img5} alt="" />
+      </div>
+    </GridWrapper>
+    <Button color="secondary">view more</Button>
+  </StyledWrapper>
 );
 
-export default withTheme(GalleryTemplate);
+export default GalleryTemplate;

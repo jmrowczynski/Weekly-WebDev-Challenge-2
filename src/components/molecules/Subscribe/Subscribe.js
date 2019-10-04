@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import Input from 'components/atoms/Input/Input';
 import Button from 'components/atoms/Button/Button';
-import { theme } from 'theme/theme';
 
 const StyledWrapper = styled.form`
   display: grid;
@@ -10,11 +10,19 @@ const StyledWrapper = styled.form`
   grid-column-gap: 2rem;
 `;
 
-const Subscribe = () => (
+const Subscribe = ({ color }) => (
   <StyledWrapper>
     <Input type="email" placeholder="Your email address..." />
-    <Button color={theme.tertiary}>subscribe</Button>
+    <Button color={color}>subscribe</Button>
   </StyledWrapper>
 );
+
+Subscribe.propTypes = {
+  color: PropTypes.string,
+};
+
+Subscribe.defaultProps = {
+  color: 'black',
+};
 
 export default Subscribe;

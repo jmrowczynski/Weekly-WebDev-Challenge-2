@@ -38,19 +38,17 @@ const InnerWrapper = styled.div`
 `;
 
 const ServicesTemplate = () => (
-  <div id="services">
-    <StyledWrapper>
-      <InnerWrapper>
-        <Card icon={shopIcon}>Online Shopping</Card>
-        <Card icon={qualityIcon}>Quality Product</Card>
-        <Card icon={deliveryIcon}>Domestic &amp; International Delivery</Card>
-        <Card icon={organizeIcon}>Well Organized</Card>
-      </InnerWrapper>
-      <InnerWrapper photo>
-        <Title big>Our Services</Title>
-      </InnerWrapper>
-    </StyledWrapper>
-  </div>
+  <StyledWrapper id="services">
+    <InnerWrapper>
+      <Card icon={shopIcon}>Online Shopping</Card>
+      <Card icon={qualityIcon}>Quality Product</Card>
+      <Card icon={deliveryIcon}>Domestic &amp; International Delivery</Card>
+      <Card icon={organizeIcon}>Well Organized</Card>
+    </InnerWrapper>
+    <InnerWrapper photo>
+      <Title big>Our Services</Title>
+    </InnerWrapper>
+  </StyledWrapper>
 );
 
 export default ServicesTemplate;

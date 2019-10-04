@@ -1,4 +1,4 @@
-import styled, { withTheme } from 'styled-components';
+import styled from 'styled-components';
 import React from 'react';
 import Title from 'components/atoms/Title/Title';
 import Paragraph from 'components/atoms/Paragraph/Paragraph';
@@ -56,33 +56,31 @@ const StyledButton = styled(Button)`
 `;
 
 const BlogTemplate = () => (
-  <div id="blog">
-    <StyledWrapper>
-      <HeaderWrapper>
-        <Title>Blog</Title>
-        <Paragraph>
-          Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit.
-        </Paragraph>
-      </HeaderWrapper>
-      <GridWrapper>
-        <BlogBox bg={bg1} day="20" month="NOV">
-          <BoldParagraph>Green Smoothies: Too Much of a Good Thing?</BoldParagraph>
-          <SmallParagraph>By Auskteez - 2 hours ago</SmallParagraph>
-        </BlogBox>
-        <BlogBox bg={bg2} day="14" month="NOV">
-          <BoldParagraph>Growing Food and a “Thirst” for Innovation</BoldParagraph>
-          <SmallParagraph>By Auskteez - 3 hours ago</SmallParagraph>
-        </BlogBox>
-        <BlogBox bg={bg3} day="10" month="NOV">
-          <BoldParagraph>Pesticides &amp; Food: What You Need to Know</BoldParagraph>
-          <SmallParagraph>By Auskteez - 6 hours ago</SmallParagraph>
-        </BlogBox>
-      </GridWrapper>
-      <StyledButton color={({ theme }) => theme.quaternary}>view more</StyledButton>
-    </StyledWrapper>
-  </div>
+  <StyledWrapper id="blog">
+    <HeaderWrapper>
+      <Title>Blog</Title>
+      <Paragraph>
+        Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit.
+      </Paragraph>
+    </HeaderWrapper>
+    <GridWrapper>
+      <BlogBox bg={bg1} day="20" month="NOV">
+        <BoldParagraph>Green Smoothies: Too Much of a Good Thing?</BoldParagraph>
+        <SmallParagraph>By Auskteez - 2 hours ago</SmallParagraph>
+      </BlogBox>
+      <BlogBox bg={bg2} day="14" month="NOV">
+        <BoldParagraph>Growing Food and a “Thirst” for Innovation</BoldParagraph>
+        <SmallParagraph>By Auskteez - 3 hours ago</SmallParagraph>
+      </BlogBox>
+      <BlogBox bg={bg3} day="10" month="NOV">
+        <BoldParagraph>Pesticides &amp; Food: What You Need to Know</BoldParagraph>
+        <SmallParagraph>By Auskteez - 6 hours ago</SmallParagraph>
+      </BlogBox>
+    </GridWrapper>
+    <StyledButton color="quaternary">view more</StyledButton>
+  </StyledWrapper>
 );
 
-export default withTheme(BlogTemplate);
+export default BlogTemplate;

@@ -8,6 +8,7 @@ import ServicesTemplate from 'components/templates/ServicesTemplate/ServicesTemp
 import GalleryTemplate from 'components/templates/GalleryTemplate/GalleryTemplate';
 import SubscribeTemplate from 'components/templates/SubscribeTemplate/SubscribeTemplate';
 import BlogTemplate from 'components/templates/BlogTemplate/BlogTemplate';
+import ContactTemplate from 'components/templates/ContactTemplate/ContactTemplate';
 
 const Root = () => (
   <>
@@ -20,6 +21,7 @@ const Root = () => (
         <GalleryTemplate />
         <SubscribeTemplate />
         <BlogTemplate />
+        <ContactTemplate />
       </>
     </ThemeProvider>
   </>

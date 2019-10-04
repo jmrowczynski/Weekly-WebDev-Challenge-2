@@ -30,7 +30,7 @@ const SubscribeTemplate = () => (
         dolore magna aliqua. Ut enim ad minim veniam.
       </Paragraph>
     </InnerWrapper>
-    <Subscribe />
+    <Subscribe color="tertiary" />
   </StyledWrapper>
 );
 

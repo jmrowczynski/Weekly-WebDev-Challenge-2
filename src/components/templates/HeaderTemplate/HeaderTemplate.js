@@ -39,21 +39,18 @@ const Icon = styled.div`
 `;
 
 const HeaderTemplate = () => (
-  <div id="home">
-    <StyledWrapper>
-      <Header />
-
-      <InnerWrapper>
-        <Title secondary>Fresh Life</Title>
-        <Paragraph secondary>
-          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco.
-        </Paragraph>
-        <Button>get free now</Button>
-      </InnerWrapper>
-      <Icon />
-    </StyledWrapper>
-  </div>
+  <StyledWrapper id="home">
+    <Header />
+    <InnerWrapper>
+      <Title secondary>Fresh Life</Title>
+      <Paragraph secondary>
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco.
+      </Paragraph>
+      <Button>get free now</Button>
+    </InnerWrapper>
+    <Icon />
+  </StyledWrapper>
 );
 
 export default HeaderTemplate;
