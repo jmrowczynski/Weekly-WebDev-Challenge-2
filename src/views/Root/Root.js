@@ -9,6 +9,7 @@ import GalleryTemplate from 'components/templates/GalleryTemplate/GalleryTemplat
 import SubscribeTemplate from 'components/templates/SubscribeTemplate/SubscribeTemplate';
 import BlogTemplate from 'components/templates/BlogTemplate/BlogTemplate';
 import ContactTemplate from 'components/templates/ContactTemplate/ContactTemplate';
+import FooterTemplate from 'components/templates/FooterTemplate/FooterTemplate';
 
 const Root = () => (
   <>
@@ -22,6 +23,7 @@ const Root = () => (
         <SubscribeTemplate />
         <BlogTemplate />
         <ContactTemplate />
+        <FooterTemplate />
       </>
     </ThemeProvider>
   </>

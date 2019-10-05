@@ -12,18 +12,19 @@ const StyledWrapper = styled.header`
   right: 0;
   padding: 0 10rem;
   z-index: 9;
-  h1 {
-    font-family: 'Pacifico', cursive;
-    font-weight: 300;
-    font-size: 5rem;
-    margin: 0;
-    padding: 0 1rem;
-  }
+`;
+
+const HeaderTitle = styled.h1`
+  font-family: 'Pacifico', cursive;
+  font-weight: 300;
+  font-size: 5rem;
+  margin: 0;
+  padding: 0 1rem;
 `;
 
 const Header = () => (
   <StyledWrapper>
-    <h1>Cahee</h1>
+    <HeaderTitle>Cahee</HeaderTitle>
     <Nav />
   </StyledWrapper>
 );

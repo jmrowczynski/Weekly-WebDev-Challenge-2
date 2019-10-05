@@ -10,6 +10,11 @@ const NavItem = styled.a`
   text-decoration: none;
   color: black;
   cursor: pointer;
+  &:before {
+    content: '';
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+  }
   &.active {
     &::before {
       content: '';
@@ -18,6 +23,7 @@ const NavItem = styled.a`
       top: -5px;
       position: absolute;
       background-color: ${({ theme }) => theme.primary};
+      transform: translateX(0);
     }
   }
 `;
